@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninjas</title>
+    <link rel="stylesheet" href="disNinja.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+            $(document).ready(function(){
+             $("img").click(function(){
+                 $(this).hide("slow");
+             });
+     
+             $("button").click(function(){
+                 $("img").show("slow");
+             });
+         })
+         </script>
+         
+</head>
+<body>
+    <div class="wrapper"></div>
+        <h1>jQuery - assignment 1</h1>
+        <div class="ninja"></div>
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+            <img src="ninja.jpg" alt="image of ninja">
+        </div>
+    </div>
+    <button>Restore</button>
+</body>
+</html>
